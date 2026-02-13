@@ -316,6 +316,6 @@ h2{ margin:0 0 .65rem 0; font-size: var(--h2); letter-spacing:-0.01em; }
 .hero-bg h1,
 .hero-bg .lead,
 .hero-bg .kicker,
-.hero-bg .trust-line {
+.hero-bg .micro {
   color: #ffffff;
 }
