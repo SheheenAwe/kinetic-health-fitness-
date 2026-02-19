@@ -1,0 +1,61 @@
+/* ===== Gallery Core ===== */
+
+.gallery {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 14px;
+}
+
+.gallery-item {
+  flex: 0 0 90%;
+  scroll-snap-align: center;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ===== Gallery Arrows ===== */
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 42px;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 5;
+  user-select: none;
+  text-shadow: 0 0 6px rgba(0,0,0,0.7);
+}
+
+.gallery-arrow.prev {
+  left: 12px;
+}
+
+.gallery-arrow.next {
+  right: 12px;
+}
+
+@media (max-width: 768px) {
+  .gallery-arrow {
+    display: none !important;
+  }
+}
